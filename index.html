@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafeteria Delícia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Cafeteria Delícia ☕</h1>
+    <nav>
+      <a href="#menu">Cardápio</a>
+      <a href="#pedido">Fazer Pedido</a>
+      <a href="#contato">Contato</a>
+      <a href="cadastro.html">Cadastro</a>
+      <a href="pagamento.html">Pagamento</a>
+    </nav>
+  </header>
+
+  <section id="banner">
+    <h2>Seu café favorito, todos os dias!</h2>
+    <button onclick="scrollToPedido()">Peça agora</button>
+  </section>
+
+  <section id="menu">
+    <h2>Cardápio</h2>
+    <div class="item">
+      <h3>Espresso</h3>
+      <p>R$ 6,00</p>
+      <button onclick="adicionar('Espresso', 6)">Adicionar</button>
+    </div>
+    <div class="item">
+      <h3>Capuccino</h3>
+      <p>R$ 8,00</p>
+      <button onclick="adicionar('Capuccino', 8)">Adicionar</button>
+    </div>
+    <div class="item">
+      <h3>Bolo de Chocolate</h3>
+      <p>R$ 10,00</p>
+      <button onclick="adicionar('Bolo de Chocolate', 10)">Adicionar</button>
+    </div>
+  </section>
+
+  <section id="pedido">
+    <h2>Seu Pedido</h2>
+    <ul id="carrinho"></ul>
+    <p>Total: R$ <span id="total">0</span></p>
+    <button onclick="finalizarPedido()">Finalizar Pedido</button>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>📍 Rua dos Cafés, 123 - Curitiba</p>
+    <p>📞 (41) 99999-9999</p>
+    <p>📧 contato@cafeteriadelicia.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cafeteria Delícia</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+s

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pagamento - Cafeteria Delícia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Formas de Pagamento</h1>
+    <nav>
+      <a href="index.html">Início</a>
+    </nav>
+  </header>
+
+  <section>
+    <form id="formPagamento">
+        <h3>Resumo do Pedido:</h3>
+<ul id="resumoPedido"></ul>
+<p>Total: R$ <span id="totalPedido"></span></p>
+
+      <label>Escolha a forma de pagamento:</label>
+      <select name="pagamento" required>
+        <option value="">Selecione</option>
+        <option value="pix">Pix</option>
+        <option value="credito">Cartão de Crédito</option>
+        <option value="debito">Cartão de Débito</option>
+        <option value="dinheiro">Dinheiro</option>
+      </select>
+
+      <label>Nome no cartão (se aplicável):</label>
+      <input type="text" name="nomeCartao" />
+
+      <label>Número do cartão:</label>
+      <input type="text" name="numeroCartao" maxlength="16" />
+
+      <label>Validade:</label>
+      <input type="month" name="validade" />
+
+      <label>CVV:</label>
+      <input type="text" name="cvv" maxlength="3" />
+
+      <button type="submit">Confirmar Pagamento</button>
+    </form>
+    <p id="mensagemPagamento"></p>
+  </section>
+
+  <script>
+    document.getElementById("formPagamento").addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("mensagemPagamento").textContent = "Pagamento confirmado! Obrigado ☕";
+      this.reset();
+    });
+  </script>
+</body>
+</html>

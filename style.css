@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f8f4f0;
+    color: #333;
+  }
+  
+  header {
+    background: #6f4e37;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  nav a {
+    margin: 0 1em;
+    color: white;
+    text-decoration: none;
+  }
+  
+  #banner {
+    background: url('cafe.jpg') center/cover no-repeat;
+    padding: 4em;
+    text-align: center;
+    color: rgb(172, 125, 125);
+  }
+  
+  section {
+    padding: 2em;
+  }
+  
+  .item {
+    background: #ede3e3;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 8px;
+  }
+  
+  button {
+    background: #6f4e37;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background: #8c8080;
+    text-align: center;
+    padding: 1em;
+  }
+  

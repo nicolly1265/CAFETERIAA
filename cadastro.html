@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro - Cafeteria Delícia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Cadastro de Cliente</h1>
+    <nav>
+      <a href="index.html">Início</a>
+    </nav>
+  </header>
+
+  <section>
+    <form id="formCadastro">
+      <label>Nome completo:</label>
+      <input type="text" name="nome" required />
+
+      <label>Email:</label>
+      <input type="email" name="email" required />
+
+      <label>Telefone:</label>
+      <input type="tel" name="telefone" required />
+
+      <label>Senha:</label>
+      <input type="password" name="senha" required />
+
+      <button type="submit">Cadastrar</button>
+    </form>
+    <p id="mensagemCadastro"></p>
+  </section>
+
+  <script>
+    document.getElementById("formCadastro").addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("mensagemCadastro").textContent = "Cadastro realizado com sucesso!";
+      this.reset();
+    });
+  </script>
+</body>
+</html>
